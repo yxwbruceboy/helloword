@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <Spinner
+            android:id="@+id/address"
+            style="@style/spinner_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:dropDownWidth="wrap_content"
+            android:spinnerMode="dropdown" />
+        <ImageView 
+            android:id="@+id/address_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            android:src="@drawable/address_down"/>
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:singleLine="true"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:background="@drawable/edittext_shape"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-25dp"
+            android:src="@drawable/searchicon" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/user_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/userimage_shape" 
+            
+            />
+         <ImageView
+            android:id="@+id/user_image_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rub_course_message_icon_point" 
+            android:layout_marginLeft="-15dp"
+            android:layout_marginTop="-15dp"
+            android:layout_marginRight="20dp"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/comeon" />
+
+    <ListView
+        android:id="@+id/course_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/rub_course_home_page_selected_bg"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="首页"
+            android:textColor="@color/address_color"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@drawable/rub_course_category_not_selected_bg"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="分类"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@drawable/rub_course_group_not_selected_bg"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="圈子"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@drawable/rub_course_me_not_selected_bg"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="我"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+</LinearLayout>
